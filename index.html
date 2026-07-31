@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>TravelWay</title>
 
     <link rel="stylesheet" href="style.css">
@@ -12,15 +13,27 @@
 <body>
 
     <header>
-        <nav>
+        <nav class="navbar">
+
             <h1>TravelWay</h1>
 
-            <ul>
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                type="button"
+                aria-label="Abrir menu"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+            <ul id="menu-lista">
                 <li><a href="#">Início</a></li>
                 <li><a href="#destinos">Destinos</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
+
         </nav>
     </header>
 
@@ -32,7 +45,8 @@
             <h2>Descubra os melhores destinos</h2>
 
             <p>
-                Planeje sua próxima viagem com praticidade e encontre lugares incríveis para conhecer.
+                Planeje sua próxima viagem com praticidade e encontre
+                lugares incríveis para conhecer.
             </p>
 
             <a href="#destinos" class="hero-botao">
@@ -54,44 +68,52 @@
 
                 <article class="card">
 
-                    <img src="img/rio.jpg" alt="Rio de Janeiro">
+                    <img src="img/rio.jpg" alt="Vista do Rio de Janeiro">
 
                     <h3>Rio de Janeiro</h3>
 
                     <p>
-                        Conheça o Cristo Redentor, as praias de Copacabana e o Pão de Açúcar.
+                        Conheça o Cristo Redentor, as praias de Copacabana
+                        e o Pão de Açúcar.
                     </p>
 
-                    <button>Saiba Mais</button>
+                    <button type="button">
+                        Saiba Mais
+                    </button>
 
                 </article>
 
                 <article class="card">
 
-                    <img src="img/gramado.jpg" alt="Gramado">
+                    <img src="img/gramado.jpg" alt="Cidade de Gramado">
 
                     <h3>Gramado</h3>
 
                     <p>
-                        Aproveite o clima europeu, a gastronomia e os belos parques da cidade.
+                        Aproveite o clima europeu, a gastronomia
+                        e os belos parques da cidade.
                     </p>
 
-                    <button>Saiba Mais</button>
+                    <button type="button">
+                        Saiba Mais
+                    </button>
 
                 </article>
 
                 <article class="card">
 
-                    <img src="img/salvador.jpg" alt="Salvador">
+                    <img src="img/salvador.jpg" alt="Cidade de Salvador">
 
                     <h3>Salvador</h3>
 
                     <p>
-                        Descubra praias incríveis, cultura rica e um centro histórico encantador.
+                        Descubra praias incríveis, cultura rica
+                        e um centro histórico encantador.
                     </p>
 
-                    <button>Saiba Mais</button>
-
+                    <button type="button">
+                        Saiba Mais
+                    </button>
 
                 </article>
 
@@ -99,15 +121,16 @@
 
         </section>
 
-        </div>
-
-        </section>
-
-
+        <!-- Sobre -->
         <section class="sobre" id="sobre">
 
             <div class="sobre-imagem">
-                <img src="img/equipe.jpg" alt="Equipe TravelWay">
+
+                <img
+                    src="img/equipe.jpg"
+                    alt="Equipe da empresa TravelWay"
+                >
+
             </div>
 
             <div class="sobre-texto">
@@ -115,17 +138,21 @@
                 <h2>Sobre a TravelWay</h2>
 
                 <p>
-                    A TravelWay nasceu para ajudar pessoas a encontrarem os melhores destinos de forma prática, rápida e
-                    inspiradora.
+                    A TravelWay nasceu para ajudar pessoas a encontrarem
+                    os melhores destinos de forma prática, rápida
+                    e inspiradora.
                 </p>
 
                 <p>
-                    Nossa missão é transformar cada viagem em uma experiência inesquecível.
+                    Nossa missão é transformar cada viagem
+                    em uma experiência inesquecível.
                 </p>
 
             </div>
 
         </section>
+
+        <!-- Depoimentos -->
         <section class="depoimentos" id="depoimentos">
 
             <h2>O que nossos clientes dizem</h2>
@@ -141,7 +168,8 @@
                     <div class="estrelas">★★★★★</div>
 
                     <p>
-                        A viagem foi incrível e todo o planejamento aconteceu de forma simples e organizada.
+                        A viagem foi incrível e todo o planejamento
+                        aconteceu de forma simples e organizada.
                     </p>
 
                     <h3>Mariana Alves</h3>
@@ -153,7 +181,8 @@
                     <div class="estrelas">★★★★★</div>
 
                     <p>
-                        Encontrei um destino perfeito para minha família e tivemos uma experiência inesquecível.
+                        Encontrei um destino perfeito para minha família
+                        e tivemos uma experiência inesquecível.
                     </p>
 
                     <h3>Lucas Ferreira</h3>
@@ -165,7 +194,8 @@
                     <div class="estrelas">★★★★★</div>
 
                     <p>
-                        As sugestões foram excelentes. A TravelWay deixou o planejamento muito mais fácil.
+                        As sugestões foram excelentes. A TravelWay deixou
+                        o planejamento muito mais fácil.
                     </p>
 
                     <h3>Camila Santos</h3>
@@ -175,6 +205,8 @@
             </div>
 
         </section>
+
+        <!-- Contato -->
         <section class="contato" id="contato">
 
             <div class="contato-info">
@@ -182,36 +214,67 @@
                 <h2>Entre em Contato</h2>
 
                 <p>
-                    Estamos prontos para ajudar você a planejar sua próxima viagem.
+                    Estamos prontos para ajudar você
+                    a planejar sua próxima viagem.
                 </p>
 
                 <div class="info-item">
+
                     <h3>📍 Endereço</h3>
+
                     <p>Brasília - DF</p>
+
                 </div>
 
                 <div class="info-item">
+
                     <h3>📞 Telefone</h3>
+
                     <p>(61) 99656-5801</p>
+
                 </div>
 
                 <div class="info-item">
+
                     <h3>✉ E-mail</h3>
+
                     <p>contato@travelway.com</p>
+
                 </div>
 
             </div>
 
-            <form class="contato-form">
+            <form class="contato-form" id="contato-form">
 
                 <label for="nome">Nome</label>
-                <input type="text" id="nome" placeholder="Digite seu nome">
+
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Digite seu nome"
+                    required
+                >
 
                 <label for="email">E-mail</label>
-                <input type="email" id="email" placeholder="Digite seu e-mail">
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Digite seu e-mail"
+                    required
+                >
 
                 <label for="mensagem">Mensagem</label>
-                <textarea id="mensagem" rows="6" placeholder="Escreva sua mensagem"></textarea>
+
+                <textarea
+                    id="mensagem"
+                    name="mensagem"
+                    rows="6"
+                    placeholder="Escreva sua mensagem"
+                    required
+                ></textarea>
 
                 <button type="submit">
                     Enviar
@@ -223,11 +286,6 @@
 
     </main>
 
-    </main>
-
-    <footer>
-
-    </footer>
     <footer>
 
         <div class="footer-container">
@@ -235,22 +293,23 @@
             <h2>TravelWay</h2>
 
             <p>
-                Explore o mundo com conforto, segurança e praticidade.
+                Explore o mundo com conforto,
+                segurança e praticidade.
             </p>
 
             <div class="footer-contato">
 
                 <p>📍 Brasília - DF</p>
 
-                <p>📞 (61) 99999-9999</p>
+                <p>📞 (61) 99656-5801</p>
 
                 <p>✉ contato@travelway.com</p>
 
             </div>
 
-            <nav class="footer-menu">
+            <nav class="footer-menu" aria-label="Menu do rodapé">
 
-                <a href="#">Home</a>
+                <a href="#">Início</a>
 
                 <a href="#destinos">Destinos</a>
 
@@ -267,6 +326,9 @@
         </div>
 
     </footer>
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>
