@@ -530,3 +530,102 @@ footer{
     }
 
 }
+/* ========================= */
+/* RESPONSIVIDADE PARA CELULAR */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    /* Menu */
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 75vh;
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .hero h2 {
+        font-size: 42px;
+        line-height: 1.1;
+    }
+
+    .hero p {
+        font-size: 18px;
+        line-height: 1.5;
+        padding: 0 10px;
+    }
+
+    .hero-botao {
+        padding: 14px 25px;
+        font-size: 17px;
+    }
+
+    /* Títulos das seções */
+    section h2 {
+        font-size: 36px;
+    }
+
+    /* Cards de destinos */
+    .destinos-container {
+        gap: 25px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    /* Sobre */
+    .sobre {
+        flex-direction: column;
+        margin: 60px auto;
+        gap: 30px;
+    }
+
+    .sobre-texto {
+        text-align: center;
+    }
+
+    .sobre-texto h2 {
+        font-size: 36px;
+    }
+
+    /* Contato */
+    .contato {
+        flex-direction: column;
+        margin: 60px auto;
+        gap: 35px;
+    }
+
+    .contato-info,
+    .contato-form {
+        width: 100%;
+    }
+
+    .contato-info h2 {
+        font-size: 36px;
+    }
+
+    .contato-form input,
+    .contato-form textarea,
+    .contato-form button {
+        width: 100%;
+    }
+
+    /* Footer */
+    .footer-menu {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
